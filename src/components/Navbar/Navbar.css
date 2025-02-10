@@ -13,3 +13,52 @@
     justify-content: flex-start; /* //appear at the start of  flex (left side)*/
     align-items: center;
 }
+
+.app__navbar-logo img {
+    width: 150%;
+}
+
+.app__navbar-links {
+    flex: 1; /* takes up all the available space/ remaining all within the parent flex container (sharing space equally with other children)*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.app__navbar-links li {
+    margin: 0 1rem; /* now this expands and makes space between the links */
+    cursor: pointer
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
+.app__navbar-login {
+    display: flex; /* for the login and register */
+    justify-content: flex-end; /* for right side */
+    align-items: center; /* in y axis */
+}
+
+.app__navbar-login a {
+    margin: 0 1rem; /* left margin-1rem */
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+
+/* now for the line inbetween */
+.app__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background-color: var(--color-grey);
+}
+
+
